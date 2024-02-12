@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-11 21:10+0530\n"
+"POT-Creation-Date: 2024-02-12 15:25+0530\n"
 "PO-Revision-Date: 2024-02-11 21:07+0530\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ko\n"
@@ -38,7 +38,7 @@ msgstr "비밀번호"
 msgid "Remember Me"
 msgstr "기억하기"
 
-#: app/forms.py:15 app/routes.py:49 app/templates/login.html:5
+#: app/forms.py:15 app/routes.py:55 app/templates/login.html:5
 msgid "Sign In"
 msgstr "로그인"
 
@@ -50,7 +50,7 @@ msgstr "이메일"
 msgid "Repeat Password"
 msgstr "비밀번호 재입력"
 
-#: app/forms.py:23 app/routes.py:70 app/templates/register.html:5
+#: app/forms.py:23 app/routes.py:76 app/templates/register.html:5
 msgid "Register"
 msgstr "등록"
 
@@ -78,68 +78,76 @@ msgstr "무엇인가를 말해보세요"
 msgid "Request Password Reset"
 msgstr "비밀번호 재설정 요청"
 
-#: app/routes.py:24
+#: app/routes.py:30
 msgid "Your post is now live!"
 msgstr "당신의 글이 이제 공개되었습니다!"
 
-#: app/routes.py:30 app/templates/base.html:27
+#: app/routes.py:36 app/templates/base.html:27
 msgid "Home"
 msgstr "홈"
 
-#: app/routes.py:42
+#: app/routes.py:48
 msgid "Invalid username or password"
 msgstr "잘못된 사용자 이름 또는 비밀번호"
 
-#: app/routes.py:68
+#: app/routes.py:74
 msgid "Congratulations, you are now a registered user!"
 msgstr "축하합니다, 이제 등록된 사용자입니다!"
 
-#: app/routes.py:101
+#: app/routes.py:107
 msgid "Your changes have been saved."
 msgstr "변경 사항이 저장되었습니다."
 
-#: app/routes.py:106 app/templates/edit_profile.html:5
+#: app/routes.py:112 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "프로필 편집"
 
-#: app/routes.py:116 app/routes.py:137
+#: app/routes.py:122 app/routes.py:143
 #, python-format
 msgid "User %(username)s not found."
 msgstr "사용자 %(username)s을(를) 찾을 수 없습니다."
 
-#: app/routes.py:119
+#: app/routes.py:125
 msgid "You cannot follow yourself!"
 msgstr "자신을 팔로우할 수 없습니다!"
 
-#: app/routes.py:123
+#: app/routes.py:129
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "당신은 %(username)s을(를) 팔로우하고 있습니다!"
 
-#: app/routes.py:140
+#: app/routes.py:146
 msgid "You cannot unfollow yourself!"
 msgstr "자신을 언팔로우할 수 없습니다!"
 
-#: app/routes.py:144
+#: app/routes.py:150
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "당신은 %(username)s을(를) 팔로우하고 있지 않습니다."
 
-#: app/routes.py:157 app/templates/base.html:30
+#: app/routes.py:163 app/templates/base.html:30
 msgid "Explore"
 msgstr "탐험"
 
-#: app/routes.py:170
+#: app/routes.py:176
 msgid "Check your email for the instructions to reset your password"
 msgstr "비밀번호 재설정을 위한 이메일을 확인하세요."
 
-#: app/routes.py:172 app/templates/reset_password_request.html:5
+#: app/routes.py:178 app/templates/reset_password_request.html:5
 msgid "Reset Password"
 msgstr "비밀번호 재설정"
 
-#: app/routes.py:185
+#: app/routes.py:191
 msgid "Your password has been reset."
 msgstr "비밀번호가 재설정되었습니다."
+
+#: app/translate.py:8
+msgid "Error: the translation service is not configured."
+msgstr "오류: 번역 서비스가 구성되지 않았습니다."
+
+#: app/translate.py:18
+msgid "Error: the translation service failed."
+msgstr "오류: 번역 서비스가 실패했습니다."
 
 #: app/templates/404.html:4
 msgid "Not Found"
@@ -161,6 +169,10 @@ msgstr "관리자에게 알림이 전송되었습니다. 불편을 끼쳐 죄송
 #, python-format
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s이(가) %(when)s에 말했습니다."
+
+#: app/templates/_post.html:20
+msgid "Translate"
+msgstr "번역"
 
 #: app/templates/base.html:9
 msgid "Welcome to Microblog"

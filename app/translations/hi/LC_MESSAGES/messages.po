@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-11 21:10+0530\n"
+"POT-Creation-Date: 2024-02-12 15:25+0530\n"
 "PO-Revision-Date: 2024-02-11 20:53+0530\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: hi\n"
@@ -38,7 +38,7 @@ msgstr "पासवर्ड"
 msgid "Remember Me"
 msgstr "मुझे याद रखें"
 
-#: app/forms.py:15 app/routes.py:49 app/templates/login.html:5
+#: app/forms.py:15 app/routes.py:55 app/templates/login.html:5
 msgid "Sign In"
 msgstr "साइन इन करें"
 
@@ -50,7 +50,7 @@ msgstr "ईमेल"
 msgid "Repeat Password"
 msgstr "पासवर्ड दोहराएं"
 
-#: app/forms.py:23 app/routes.py:70 app/templates/register.html:5
+#: app/forms.py:23 app/routes.py:76 app/templates/register.html:5
 msgid "Register"
 msgstr "रजिस्टर"
 
@@ -78,68 +78,77 @@ msgstr "कुछ कहें"
 msgid "Request Password Reset"
 msgstr "पासवर्ड रीसेट का अनुरोध करें"
 
-#: app/routes.py:24
+#: app/routes.py:30
 msgid "Your post is now live!"
 msgstr "आपकी पोस्ट अब लाइव है!"
 
-#: app/routes.py:30 app/templates/base.html:27
+#: app/routes.py:36 app/templates/base.html:27
 msgid "Home"
 msgstr "होम"
 
-#: app/routes.py:42
+#: app/routes.py:48
 msgid "Invalid username or password"
 msgstr "अवैध उपयोगकर्ता नाम या पासवर्ड"
 
-#: app/routes.py:68
+#: app/routes.py:74
 msgid "Congratulations, you are now a registered user!"
 msgstr "बधाई हो, आप अब एक पंजीकृत उपयोगकर्ता हैं!"
 
-#: app/routes.py:101
+#: app/routes.py:107
 msgid "Your changes have been saved."
 msgstr "आपके परिवर्तन सहेजे गए हैं।"
 
-#: app/routes.py:106 app/templates/edit_profile.html:5
+#: app/routes.py:112 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "प्रोफ़ाइल संपादित करें"
 
-#: app/routes.py:116 app/routes.py:137
+#: app/routes.py:122 app/routes.py:143
 #, python-format
 msgid "User %(username)s not found."
 msgstr "उपयोगकर्ता %(username)s नहीं मिला।"
 
-#: app/routes.py:119
+#: app/routes.py:125
 msgid "You cannot follow yourself!"
 msgstr "आप अपना खुद को फॉलो नहीं कर सकते!"
 
-#: app/routes.py:123
+#: app/routes.py:129
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "आप %(username)s को फॉलो कर रहे हैं!"
 
-#: app/routes.py:140
+#: app/routes.py:146
 msgid "You cannot unfollow yourself!"
 msgstr "आप अपना खुद को अनफॉलो नहीं कर सकते!"
 
-#: app/routes.py:144
+#: app/routes.py:150
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "आप %(username)s को नहीं फॉलो कर रहे हैं।"
 
-#: app/routes.py:157 app/templates/base.html:30
+#: app/routes.py:163 app/templates/base.html:30
 msgid "Explore"
 msgstr "अन्वेषण करें"
 
-#: app/routes.py:170
+#: app/routes.py:176
 msgid "Check your email for the instructions to reset your password"
 msgstr "अपने ईमेल की जाँच करें पासवर्ड रीसेट करने के लिए निर्देशों के लिए"
 
-#: app/routes.py:172 app/templates/reset_password_request.html:5
+#: app/routes.py:178 app/templates/reset_password_request.html:5
 msgid "Reset Password"
 msgstr "पासवर्ड रीसेट करें"
 
-#: app/routes.py:185
+#: app/routes.py:191
 msgid "Your password has been reset."
 msgstr "आपका पासवर्ड रीसेट किया गया है।"
+
+#: app/translate.py:8
+msgid "Error: the translation service is not configured."
+msgstr "त्रुटि: अनुवाद सेवा कॉन्फ़िगर नहीं की गई है।"
+
+#: app/translate.py:18
+msgid "Error: the translation service failed."
+msgstr "त्रुटि: अनुवाद सेवा विफल हुई।"
+
 
 #: app/templates/404.html:4
 msgid "Not Found"
@@ -161,6 +170,11 @@ msgstr "प्रशासक को सूचित किया गया ह�
 #, python-format
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s ने कहा %(when)s"
+
+#: app/templates/_post.html:20
+msgid "Translate"
+msgstr "अनुवाद करें"
+
 
 #: app/templates/base.html:9
 msgid "Welcome to Microblog"
