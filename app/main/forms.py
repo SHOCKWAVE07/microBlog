@@ -7,6 +7,11 @@ from app import db
 from app.models import User
 from flask import request
 
+class MessageForm(FlaskForm):
+    message = TextAreaField(_l('Message'), validators=[
+        DataRequired(), Length(min=0, max=140)])
+    submit = SubmitField(_l('Submit'))
+
 class SearchForm(FlaskForm):
     q = StringField(_l('Search'), validators=[DataRequired()])
 
