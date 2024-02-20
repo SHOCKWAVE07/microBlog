@@ -22,11 +22,15 @@ login.login_message = _l('Please log in to access this page.')
 mail = Mail()
 moment = Moment()
 babel = Babel()
+from redis import Redis
+import rq
 
 
 def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
+    app.redis = Redis.from_url(app.config['REDIS_URL'])
+    app.task_queue = rq.Queue('microblog-tasks', connection=app.redis)
 
     db.init_app(app)
     migrate.init_app(app, db)
@@ -34,6 +38,7 @@ def create_app(config_class=Config):
     mail.init_app(app)
     moment.init_app(app)
     babel.init_app(app, locale_selector=get_locale)
+    
 
     from app.errors import bp as errors_bp
     app.register_blueprint(errors_bp)

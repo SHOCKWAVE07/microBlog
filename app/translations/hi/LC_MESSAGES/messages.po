@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-20 18:19+0530\n"
+"POT-Creation-Date: 2024-02-20 20:26+0530\n"
 "PO-Revision-Date: 2024-02-11 20:53+0530\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: hi\n"
@@ -103,7 +103,7 @@ msgstr ""
 msgid "Submit"
 msgstr "सबमिट"
 
-#: app/main/forms.py:16 app/main/routes.py:59
+#: app/main/forms.py:16 app/main/routes.py:86
 msgid "Search"
 msgstr ""
 
@@ -115,55 +115,63 @@ msgstr "मेरे बारे में"
 msgid "Say something"
 msgstr "कुछ कहें"
 
-#: app/main/routes.py:37
+#: app/main/routes.py:19
+msgid "An export task is currently in progress"
+msgstr ""
+
+#: app/main/routes.py:21
+msgid "Exporting posts..."
+msgstr ""
+
+#: app/main/routes.py:64
 #, fuzzy
 msgid "Your message has been sent."
 msgstr "आपका पासवर्ड रीसेट किया गया है।"
 
-#: app/main/routes.py:39
+#: app/main/routes.py:66
 msgid "Send Message"
 msgstr ""
 
-#: app/main/routes.py:82
+#: app/main/routes.py:109
 msgid "Your post is now live!"
 msgstr "आपकी पोस्ट अब लाइव है!"
 
-#: app/main/routes.py:88 app/templates/base.html:27
+#: app/main/routes.py:115 app/templates/base.html:39
 msgid "Home"
 msgstr "होम"
 
-#: app/main/routes.py:119
+#: app/main/routes.py:146
 msgid "Your changes have been saved."
 msgstr "आपके परिवर्तन सहेजे गए हैं।"
 
-#: app/main/routes.py:124 app/templates/edit_profile.html:5
+#: app/main/routes.py:151 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "प्रोफ़ाइल संपादित करें"
 
-#: app/main/routes.py:134 app/main/routes.py:155
+#: app/main/routes.py:161 app/main/routes.py:182
 #, python-format
 msgid "User %(username)s not found."
 msgstr "उपयोगकर्ता %(username)s नहीं मिला।"
 
-#: app/main/routes.py:137
+#: app/main/routes.py:164
 msgid "You cannot follow yourself!"
 msgstr "आप अपना खुद को फॉलो नहीं कर सकते!"
 
-#: app/main/routes.py:141
+#: app/main/routes.py:168
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "आप %(username)s को फॉलो कर रहे हैं!"
 
-#: app/main/routes.py:158
+#: app/main/routes.py:185
 msgid "You cannot unfollow yourself!"
 msgstr "आप अपना खुद को अनफॉलो नहीं कर सकते!"
 
-#: app/main/routes.py:162
+#: app/main/routes.py:189
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "आप %(username)s को नहीं फॉलो कर रहे हैं।"
 
-#: app/main/routes.py:175 app/templates/base.html:30
+#: app/main/routes.py:202 app/templates/base.html:42
 msgid "Explore"
 msgstr "अन्वेषण करें"
 
@@ -180,19 +188,19 @@ msgstr "अनुवाद करें"
 msgid "Welcome to Microblog"
 msgstr "माइक्रोब्लॉग में आपका स्वागत है"
 
-#: app/templates/base.html:43
+#: app/templates/base.html:55
 msgid "Login"
 msgstr "लॉग इन"
 
-#: app/templates/base.html:48 app/templates/messages.html:4
+#: app/templates/base.html:59 app/templates/messages.html:4
 msgid "Messages"
 msgstr ""
 
-#: app/templates/base.html:52
+#: app/templates/base.html:69
 msgid "Profile"
 msgstr "प्रोफ़ाइल"
 
-#: app/templates/base.html:55
+#: app/templates/base.html:72
 msgid "Logout"
 msgstr "लॉग आउट"
 
@@ -252,15 +260,20 @@ msgstr "%(count)d का पालन कर रहे हैं"
 msgid "Edit your profile"
 msgstr "अपनी प्रोफ़ाइल संपादित करें"
 
-#: app/templates/user.html:18 app/templates/user_popup.html:15
+#: app/templates/user.html:15
+#, fuzzy
+msgid "Export your posts"
+msgstr "क्या आपने अपना पासवर्ड भूल गए हैं?"
+
+#: app/templates/user.html:21 app/templates/user_popup.html:15
 msgid "Follow"
 msgstr "फॉलो"
 
-#: app/templates/user.html:25 app/templates/user_popup.html:22
+#: app/templates/user.html:28 app/templates/user_popup.html:22
 msgid "Unfollow"
 msgstr "अनफॉलो"
 
-#: app/templates/user.html:36
+#: app/templates/user.html:33
 msgid "Send private message"
 msgstr ""
 
