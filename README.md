@@ -47,4 +47,4 @@ Blogpost is a feature-rich blogging platform designed to provide a seamless and 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/microblog.git
+   git clone git@github.com:SHOCKWAVE07/microBlog.git
